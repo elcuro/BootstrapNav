@@ -1,0 +1,13 @@
+{
+	"name": "BoostrapNav",
+	"description": "Helper for Boostrap navs",
+
+	"author": "Juraj Jancuska",
+	"authorEmail": "jjancuska@gmail.com",
+	"authorUrl": "",
+
+	"dependencies": {
+		"plugins": [
+		]
+	}
+}

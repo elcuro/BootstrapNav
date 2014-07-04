@@ -1,0 +1,25 @@
+#BootstrapNav plugin for Croogo 1.4+
+
+Croogo menus in Bootstrap3 style. Inspired by original Croogo menu helper.
+
+## Installation
+ * download and copy this plugin to app/Plugin/BootstrapNav
+ * activate plugin in administration Extesions -> Plugins
+
+## Example usage
+
+Default: Set element option in menu call
+
+       echo $this->Menus->menu('main', array('element' => 'BoostrapNav.menu'));
+
+Customize: You can call BootstrapNav helper from your 'menu' elements like this
+
+       $customs = array(
+              'mainClass' => 'nav nav-pills',
+              'mainRole' => 'menulist',
+              'subClass' => 'dropdown-menu',
+              'subRole' => 'menu'
+       );
+       $options = Hash::merge($customs, $options);
+       echo $this->BootstrapNav->nestedLinks($menu['threaded'], $options);
+
